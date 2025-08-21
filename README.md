@@ -11,6 +11,23 @@
 
 Bu proje, **Avrupa Birliği (EU27)** ile **ABD**'nin nükleer enerji ve yenilenebilir enerji kullanımının zaman içindeki seyrini analiz eder. **Our World in Data (OWID)** veri setleri kullanılarak gerçek ve güncel verilerle çalışır.
 
+### 🌍 EU27 Nedir?
+
+**EU27**, Avrupa Birliği'nin (European Union) **27 üye ülkesini** temsil eden kısaltmadır. 2020'de Brexit sonrası Birleşik Krallık'ın ayrılmasıyla EU28'den EU27'ye düşmüştür.
+
+#### **EU27 Üye Ülkeleri:**
+
+**Batı Avrupa:** Fransa, Almanya, İtalya, İspanya, Portekiz, Belçika, Hollanda, Lüksemburg, İrlanda
+
+**Kuzey Avrupa:** İsveç, Danimarka, Finlandiya, Estonya, Letonya, Litvanya
+
+**Orta Avrupa:** Avusturya, Çek Cumhuriyeti, Slovakya, Slovenya, Macaristan, Polonya
+
+**Güney Avrupa:** Yunanistan, Hırvatistan, Romanya, Bulgaristan, Malta, Kıbrıs
+
+#### **Enerji Analizinde EU27:**
+Projemizde EU27 verisi, bu 27 ülkenin **toplam enerji tüketimi** ve **enerji karışımını** temsil eder. EU27, ABD ile karşılaştırıldığında **yenilenebilir enerji** ve **düşük karbon** konularında daha ileride durmaktadır.
+
 ### 🎯 Ana Amaçlar
 - EU27 ve ABD'nin enerji politikalarının karşılaştırmalı analizi
 - Nükleer enerji kullanım trendlerinin incelenmesi
