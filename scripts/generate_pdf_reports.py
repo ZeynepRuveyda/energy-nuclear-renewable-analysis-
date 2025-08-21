@@ -305,7 +305,7 @@ class PDFReportGenerator:
             ['Fossil Fuel Dependence', '67.6%', '80.3%', '-12.7%', 'EU27 less fossil dependent']
         ]
         
-        table = Table(data, colWidths=[1.5*inch, 1.2*inch, 1.2*inch, 1.2*inch, 2.5*inch])
+        table = Table(data, colWidths=[1.8*inch, 1.2*inch, 1.2*inch, 1.2*inch, 2.8*inch])
         table.setStyle(TableStyle([
             ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
             ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
@@ -550,7 +550,7 @@ class PDFReportGenerator:
             ['Fosil Yakıt Bağımlılığı', '67.6%', '80.3%', '-12.7%', 'EU27 daha az fosil bağımlı']
         ]
         
-        table = Table(data, colWidths=[1.5*inch, 1.2*inch, 1.2*inch, 1.2*inch, 2.5*inch])
+        table = Table(data, colWidths=[1.8*inch, 1.2*inch, 1.2*inch, 1.2*inch, 2.8*inch])
         table.setStyle(TableStyle([
             ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
             ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
