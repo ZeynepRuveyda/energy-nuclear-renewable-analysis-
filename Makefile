@@ -1,4 +1,4 @@
-.PHONY: venv install data process notebook report clean
+.PHONY: venv install data process notebook report clean advanced-analysis
 
 VENV := .venv
 PYTHON := $(VENV)/bin/python
@@ -22,6 +22,9 @@ notebook:
 
 report:
 	$(VENV)/bin/jupyter nbconvert --to html --execute notebooks/analysis_eu_us.ipynb --output-dir reports
+
+advanced-analysis:
+	$(PYTHON) scripts/advanced_analysis.py
 
 clean:
 	rm -rf data/raw/* data/processed/* reports/*
