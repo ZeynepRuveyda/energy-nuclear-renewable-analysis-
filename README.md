@@ -68,10 +68,20 @@ energy-nuclear-renewable-analysis-/
 │   ├── raw/                   # OWID'den indirilen ham veriler
 │   └── processed/             # İşlenmiş veriler
 ├── 📝 notebooks/              # Jupyter not defterleri
+│   └── shale_gas_triple_analysis.ipynb  # 3'lü karşılaştırma analizi
 ├── 🔧 scripts/                # Python scriptleri
 │   ├── download_data.py       # Veri indirme scripti
-│   └── process_data.py        # Veri işleme scripti
+│   ├── process_data.py        # Veri işleme scripti
+│   ├── shale_gas_analysis.py  # Kapsamlı kaya gazı analizi
+│   ├── simple_shale_gas_analysis.py  # Basit kaya gazı analizi
+│   └── triple_comparison_analysis.py  # 3'lü karşılaştırma analizi
 ├── 📈 reports/                # Analiz raporları ve grafikler
+│   ├── comprehensive_energy_analysis.png  # Kapsamlı enerji analizi
+│   ├── energy_analysis.png    # Enerji analizi
+│   ├── triple_comparison_analysis.png  # 3'lü karşılaştırma
+│   ├── shale_gas_impact.png   # Kaya gazı etkisi
+│   ├── shale_gas_analysis.png # Kaya gazı analizi
+│   └── simple_gas_analysis.png # Basit gaz analizi
 ├── 📋 requirements.txt        # Python bağımlılıkları
 ├── ⚙️ Makefile                # Otomatik işlemler
 └── 📖 README.md               # Bu dosya
@@ -94,6 +104,10 @@ make notebook
 
 # Rapor üretimi
 make report        # HTML rapor oluştur
+
+# Kaya gazı analizi
+python scripts/shale_gas_analysis.py          # Kapsamlı kaya gazı analizi
+python scripts/triple_comparison_analysis.py  # 3'lü karşılaştırma analizi
 ```
 
 ### Manuel Veri İndirme
@@ -150,6 +164,55 @@ python scripts/process_data.py
 1. **EU27**: Mevcut nükleer reaktörlerin ömür uzatımı
 2. **ABD**: Yeni nesil nükleer teknolojiler ve yenilenebilir altyapı
 3. **Her iki bölge**: 2050 karbon nötr hedefleri için agresif politikalar
+
+## ⛽ Kaya Gazı (Shale Gas) Analizi
+
+### 🔍 Üçlü Karşılaştırma: Nükleer, Yenilenebilir ve Kaya Gazı
+
+Bu proje artık **kaya gazı (shale gas)** analizini de içermektedir. OWID veri setinde doğal gaz verileri kullanılarak kaya gazı etkisi analiz edilmiştir.
+
+#### 📊 Kaya Gazı Analiz Sonuçları
+
+| Analiz Türü | Açıklama |
+|-------------|----------|
+| **Shale Gas Revolution (2008)** | ABD'de kaya gazı üretiminin başlangıcı |
+| **Pre-2008 vs Post-2008** | Kaya gazı öncesi ve sonrası karşılaştırması |
+| **EU27 vs ABD Gas Trends** | Doğal gaz kullanım trendlerinin karşılaştırması |
+
+#### 📈 Yeni Notebook: `shale_gas_triple_analysis.ipynb`
+
+**İçerik:**
+- 🌍 **Nükleer Enerji Trendi**: EU27 vs ABD (1990-2024)
+- 🌱 **Yenilenebilir Enerji Gelişimi**: Paris Anlaşması etkisi
+- ⛽ **Doğal Gaz (Kaya Gazı Proxy)**: Shale Gas Revolution etkisi
+- 📊 **2024 Enerji Karışımı**: 3'lü karşılaştırma
+- 📋 **İstatistiksel Özet**: Detaylı analiz sonuçları
+
+**Özellikler:**
+- ✅ **İki Dilli**: İngilizce ve Türkçe açıklamalar
+- ✅ **Görselleştirme**: 4 farklı grafik türü
+- ✅ **Interaktif**: Jupyter Notebook formatında
+- ✅ **Veri Odaklı**: Gerçek OWID verileri ile
+
+#### 🛠️ Yeni Scriptler
+
+1. **`scripts/shale_gas_analysis.py`**: Kapsamlı kaya gazı analizi
+2. **`scripts/simple_shale_gas_analysis.py`**: Basit kaya gazı analizi
+3. **`scripts/triple_comparison_analysis.py`**: 3'lü karşılaştırma analizi
+
+#### 📊 Yeni Raporlar
+
+- `reports/triple_comparison_analysis.png`: 3'lü karşılaştırma grafiği
+- `reports/shale_gas_impact.png`: Kaya gazı etkisi analizi
+- `reports/shale_gas_analysis.png`: Kapsamlı kaya gazı analizi
+- `reports/simple_gas_analysis.png`: Basit gaz analizi
+
+### 🎯 Kaya Gazı Analizinin Amacı
+
+1. **ABD Shale Gas Revolution**'ın enerji karışımına etkisini anlamak
+2. **EU27 ve ABD** arasındaki doğal gaz kullanım farklarını analiz etmek
+3. **Nükleer, Yenilenebilir ve Gaz** enerji kaynaklarının 3'lü karşılaştırmasını yapmak
+4. **Enerji politikalarının** farklı yakıt türlerine etkisini değerlendirmek
 
 ## 🤝 Katkıda Bulunma
 
