@@ -2,7 +2,7 @@
 """
 PDF Rapor Oluşturucu / PDF Report Generator
 EU27 vs US: Nuclear, Renewable, and Shale Gas Analysis
-Enhanced version with Turkish font support and detailed content
+Enhanced version with proper Turkish font support and detailed content
 """
 
 import os
@@ -20,6 +20,7 @@ from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_RIGHT
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.pdfbase.pdfmetrics import stringWidth
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -36,9 +37,29 @@ class PDFReportGenerator:
         self.setup_custom_styles()
         
     def setup_custom_styles(self):
-        """Custom paragraph styles for the report with Turkish font support"""
-        # Use Helvetica for better Turkish character support
-        self.turkish_font = 'Helvetica'
+        """Custom paragraph styles for the report with proper Turkish font support"""
+        # Try to register a font with better Turkish support
+        try:
+            # Try to use DejaVu Sans which has good Turkish support
+            pdfmetrics.registerFont(TTFont('DejaVuSans', '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'))
+            self.turkish_font = 'DejaVuSans'
+            print("✅ DejaVuSans font registered successfully")
+        except:
+            try:
+                # Fallback to Liberation Sans
+                pdfmetrics.registerFont(TTFont('LiberationSans', '/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf'))
+                self.turkish_font = 'LiberationSans'
+                print("✅ LiberationSans font registered successfully")
+            except:
+                try:
+                    # Try Arial Unicode MS if available
+                    pdfmetrics.registerFont(TTFont('ArialUnicode', '/usr/share/fonts/truetype/msttcorefonts/Arial.ttf'))
+                    self.turkish_font = 'ArialUnicode'
+                    print("✅ ArialUnicode font registered successfully")
+                except:
+                    # Final fallback to Helvetica
+                    self.turkish_font = 'Helvetica'
+                    print("⚠️ Using Helvetica as fallback font")
         
         self.title_style = ParagraphStyle(
             'CustomTitle',
@@ -289,7 +310,7 @@ class PDFReportGenerator:
             ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
             ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
             ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            ('FONTNAME', (0, 0), (-1, 0), self.turkish_font),
             ('FONTSIZE', (0, 0), (-1, 0), 10),
             ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
             ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
@@ -534,7 +555,7 @@ class PDFReportGenerator:
             ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
             ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
             ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+            ('FONTNAME', (0, 0), (-1, 0), self.turkish_font),
             ('FONTSIZE', (0, 0), (-1, 0), 10),
             ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
             ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
