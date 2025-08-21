@@ -541,29 +541,44 @@ class PDFReportGenerator:
         """, self.body_style))
         story.append(Spacer(1, 12))
         
-        # Key Findings Table
-        data = [
-            ['Metrik', 'EU27', 'ABD', 'Fark', 'Analiz'],
-            ['Nükleer Enerji (2024)', '10.1%', '7.6%', '+2.5%', 'EU27 nükleer benimsemede öncü'],
-            ['Yenilenebilir Enerji (2024)', '22.3%', '12.1%', '+10.2%', 'EU27 yenilenebilir liderliği'],
-            ['Düşük Karbon Toplam (2024)', '32.4%', '19.7%', '+12.7%', 'EU27 dekarbonizasyon avantajı'],
-            ['Fosil Yakıt Bağımlılığı', '67.6%', '80.3%', '-12.7%', 'EU27 daha az fosil bağımlı']
-        ]
+        # Key Findings - Simple Card Style
+        story.append(Paragraph("<b>📊 2024 Yılı Ana Bulgular</b>", self.subheading_style))
+        story.append(Spacer(1, 10))
         
-        table = Table(data, colWidths=[1.8*inch, 1.2*inch, 1.2*inch, 1.2*inch, 2.8*inch])
-        table.setStyle(TableStyle([
-            ('BACKGROUND', (0, 0), (-1, 0), colors.darkblue),
-            ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-            ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-            ('FONTNAME', (0, 0), (-1, 0), self.turkish_font),
-            ('FONTSIZE', (0, 0), (-1, 0), 10),
-            ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
-            ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
-            ('GRID', (0, 0), (-1, -1), 1, colors.black),
-            ('ALIGN', (4, 1), (4, -1), 'LEFT'),
-            ('FONTSIZE', (4, 1), (4, -1), 9)
-        ]))
-        story.append(table)
+        # Nuclear Energy Card
+        nuclear_text = """
+        <b>⚛️ Nükleer Enerji:</b><br/>
+        EU27: 10.1% | ABD: 7.6% | Fark: +2.5%<br/>
+        <i>EU27 nükleer enerji benimsemede öncü konumda</i>
+        """
+        story.append(Paragraph(nuclear_text, self.highlight_style))
+        story.append(Spacer(1, 8))
+        
+        # Renewable Energy Card
+        renewable_text = """
+        <b>🌱 Yenilenebilir Enerji:</b><br/>
+        EU27: 22.3% | ABD: 12.1% | Fark: +10.2%<br/>
+        <i>EU27 yenilenebilir enerji liderliğini sürdürüyor</i>
+        """
+        story.append(Paragraph(renewable_text, self.highlight_style))
+        story.append(Spacer(1, 8))
+        
+        # Low Carbon Card
+        lowcarbon_text = """
+        <b>🌍 Düşük Karbon Toplam:</b><br/>
+        EU27: 32.4% | ABD: 19.7% | Fark: +12.7%<br/>
+        <i>EU27 dekarbonizasyon avantajına sahip</i>
+        """
+        story.append(Paragraph(lowcarbon_text, self.highlight_style))
+        story.append(Spacer(1, 8))
+        
+        # Fossil Fuel Card
+        fossil_text = """
+        <b>🏭 Fosil Yakıt Bağımlılığı:</b><br/>
+        EU27: 67.6% | ABD: 80.3% | Fark: -12.7%<br/>
+        <i>EU27 daha az fosil yakıt bağımlılığı gösteriyor</i>
+        """
+        story.append(Paragraph(fossil_text, self.highlight_style))
         story.append(Spacer(1, 20))
         
         # Nuclear Energy Analysis
