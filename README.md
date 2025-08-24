@@ -1,268 +1,267 @@
-# 🌍 EU27 vs ABD: Enerji Politikaları Analizi
+# 🌍 EU27 vs USA: Energy Policy Analysis
 
-> **Nükleer ve Yenilenebilir Enerji Karşılaştırması**  
-> Our World in Data (OWID) gerçek verileri ile Avrupa Birliği ve ABD'nin enerji dönüşüm süreçlerinin analizi
+> **Nuclear and Renewable Energy Comparison**  
+> Analysis of European Union and USA energy transition processes using real data from Our World in Data (OWID)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/ZeynepRuveyda/energy-nuclear-renewable-analysis-)
 [![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge&logo=python)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-## 📋 Proje Hakkında
+## 📋 About the Project
 
-Bu proje, **Avrupa Birliği (EU27)** ile **ABD**'nin nükleer enerji ve yenilenebilir enerji kullanımının zaman içindeki seyrini analiz eder. **Our World in Data (OWID)** veri setleri kullanılarak gerçek ve güncel verilerle çalışır.
+This project analyzes the time series trends of **nuclear energy** and **renewable energy** usage between the **European Union (EU27)** and the **USA**. It works with real and current data using **Our World in Data (OWID)** datasets.
 
-### 🌍 EU27 Nedir?
+### 🌍 What is EU27?
 
-**EU27**, Avrupa Birliği'nin (European Union) **27 üye ülkesini** temsil eden kısaltmadır. 2020'de Brexit sonrası Birleşik Krallık'ın ayrılmasıyla EU28'den EU27'ye düşmüştür.
+**EU27** represents the **27 member countries** of the European Union. After Brexit in 2020, when the United Kingdom left, it decreased from EU28 to EU27.
 
-#### **EU27 Üye Ülkeleri:**
+#### **EU27 Member Countries:**
 
-**Batı Avrupa:** Fransa, Almanya, İtalya, İspanya, Portekiz, Belçika, Hollanda, Lüksemburg, İrlanda
+**Western Europe:** France, Germany, Italy, Spain, Portugal, Belgium, Netherlands, Luxembourg, Ireland
 
-**Kuzey Avrupa:** İsveç, Danimarka, Finlandiya, Estonya, Letonya, Litvanya
+**Northern Europe:** Sweden, Denmark, Finland, Estonia, Latvia, Lithuania
 
-**Orta Avrupa:** Avusturya, Çek Cumhuriyeti, Slovakya, Slovenya, Macaristan, Polonya
+**Central Europe:** Austria, Czech Republic, Slovakia, Slovenia, Hungary, Poland
 
-**Güney Avrupa:** Yunanistan, Hırvatistan, Romanya, Bulgaristan, Malta, Kıbrıs
+**Southern Europe:** Greece, Croatia, Romania, Bulgaria, Malta, Cyprus
 
-#### **Enerji Analizinde EU27:**
-Projemizde EU27 verisi, bu 27 ülkenin **toplam enerji tüketimi** ve **enerji karışımını** temsil eder. EU27, ABD ile karşılaştırıldığında **yenilenebilir enerji** ve **düşük karbon** konularında daha ileride durmaktadır.
+#### **EU27 in Energy Analysis:**
+In our project, EU27 data represents the **total energy consumption** and **energy mix** of these 27 countries. EU27 is more advanced than the USA in **renewable energy** and **low-carbon** issues.
 
-### 🎯 Ana Amaçlar
-- EU27 ve ABD'nin enerji politikalarının karşılaştırmalı analizi
-- Nükleer enerji kullanım trendlerinin incelenmesi
-- Yenilenebilir enerji gelişiminin analizi
-- Düşük karbon geçiş süreçlerinin değerlendirilmesi
+### 🎯 Main Objectives
+- Comparative analysis of EU27 and USA energy policies
+- Examination of nuclear energy usage trends
+- Analysis of renewable energy development
+- Evaluation of low-carbon transition processes
 
-## 📊 Analiz Sonuçları (2024)
+## 📊 Analysis Results (2024)
 
-| Enerji Kaynağı | EU27 | ABD | Fark |
-|----------------|------|-----|------|
-| **Nükleer Enerji** | 10.1% | 7.6% | EU27 +2.5% |
-| **Yenilenebilir Enerji** | 22.3% | 12.1% | EU27 +10.2% |
-| **Düşük Karbon (Toplam)** | 32.4% | 19.7% | EU27 +12.7% |
-| **Fosil Yakıt** | 67.6% | 80.3% | EU27 -12.7% |
+| Energy Source | EU27 | USA | Difference |
+|---------------|------|-----|------------|
+| **Nuclear Energy** | 10.1% | 7.6% | EU27 +2.5% |
+| **Renewable Energy** | 22.3% | 12.1% | EU27 +10.2% |
+| **Low Carbon (Total)** | 32.4% | 19.7% | EU27 +12.7% |
+| **Fossil Fuel** | 67.6% | 80.3% | EU27 -12.7% |
 
-### 🔍 Trend Analizi (2015-2024)
+### 🔍 Trend Analysis (2015-2024)
 
 #### EU27
-- **Nükleer**: 11.8% → 10.1% (▼ -1.7%)
-- **Yenilenebilir**: 14.2% → 22.3% (▲ +8.1%)
+- **Nuclear**: 11.8% → 10.1% (▼ -1.7%)
+- **Renewable**: 14.2% → 22.3% (▲ +8.1%)
 
-#### ABD
-- **Nükleer**: 8.3% → 7.6% (▼ -0.7%)
-- **Yenilenebilir**: 7.2% → 12.1% (▲ +4.9%)
+#### USA
+- **Nuclear**: 8.3% → 7.6% (▼ -0.7%)
+- **Renewable**: 7.2% → 12.1% (▲ +4.9%)
 
-## 🚀 Kurulum
+## 🚀 Installation
 
-### Gereksinimler
+### Requirements
 - Python 3.8+
-- pip (Python paket yöneticisi)
+- pip (Python package manager)
 - Git
 
-### Adım Adım Kurulum
+### Step-by-Step Installation
 
 ```bash
-# 1. Projeyi klonlayın
+# 1. Clone the project
 git clone https://github.com/ZeynepRuveyda/energy-nuclear-renewable-analysis-.git
 cd energy-nuclear-renewable-analysis-
 
-# 2. Sanal ortam oluşturun ve aktifleştirin
+# 2. Create and activate virtual environment
 make install
 
-# 3. Verileri indirin
+# 3. Download data
 make data
 
-# 4. Verileri işleyin
+# 4. Process data
 make process
 ```
 
-## 📁 Proje Yapısı
+## 📁 Project Structure
 
 ```
 energy-nuclear-renewable-analysis-/
-├── 📊 data/                    # Veri dosyaları
-│   ├── raw/                   # OWID'den indirilen ham veriler
-│   └── processed/             # İşlenmiş veriler
-├── 📝 notebooks/              # Jupyter not defterleri
-│   └── shale_gas_triple_analysis.ipynb  # 3'lü karşılaştırma analizi
-├── 🔧 scripts/                # Python scriptleri
-│   ├── download_data.py       # Veri indirme scripti
-│   ├── process_data.py        # Veri işleme scripti
-│   ├── shale_gas_analysis.py  # Kapsamlı kaya gazı analizi
-│   ├── simple_shale_gas_analysis.py  # Basit kaya gazı analizi
-│   └── triple_comparison_analysis.py  # 3'lü karşılaştırma analizi
-├── 📈 reports/                # Analiz raporları ve grafikler
-│   ├── comprehensive_energy_analysis.png  # Kapsamlı enerji analizi
-│   ├── energy_analysis.png    # Enerji analizi
-│   ├── triple_comparison_analysis.png  # 3'lü karşılaştırma
-│   ├── shale_gas_impact.png   # Kaya gazı etkisi
-│   ├── shale_gas_analysis.png # Kaya gazı analizi
-│   └── simple_gas_analysis.png # Basit gaz analizi
-├── 📋 requirements.txt        # Python bağımlılıkları
-├── ⚙️ Makefile                # Otomatik işlemler
-└── 📖 README.md               # Bu dosya
+├── 📊 data/                    # Data files
+│   ├── raw/                   # Raw data downloaded from OWID
+│   └── processed/             # Processed data
+├── 📝 notebooks/              # Jupyter notebooks
+│   └── shale_gas_triple_analysis.ipynb  # Triple comparison analysis
+├── 🔧 scripts/                # Python scripts
+│   ├── download_data.py       # Data download script
+│   ├── process_data.py        # Data processing script
+│   ├── shale_gas_analysis.py  # Comprehensive shale gas analysis
+│   ├── simple_shale_gas_analysis.py  # Simple shale gas analysis
+│   └── triple_comparison_analysis.py  # Triple comparison analysis
+├── 📈 reports/                # Analysis reports and graphs
+│   ├── comprehensive_energy_analysis.png  # Comprehensive energy analysis
+│   ├── energy_analysis.png    # Energy analysis
+│   ├── triple_comparison_analysis.png  # Triple comparison
+│   ├── shale_gas_impact.png   # Shale gas impact
+│   ├── shale_gas_analysis.png # Shale gas analysis
+│   └── simple_gas_analysis.png # Simple gas analysis
+├── 📋 requirements.txt        # Python dependencies
+├── ⚙️ Makefile                # Automated processes
+└── 📖 README.md               # This file
 ```
 
-## 🛠️ Kullanım
+## 🛠️ Usage
 
-### Temel Komutlar
+### Basic Commands
 
 ```bash
-# Sanal ortamı aktifleştir
+# Activate virtual environment
 source .venv/bin/activate
 
-# Veri güncelleme
-make data          # OWID'den yeni veri indir
-make process       # Verileri işle ve analiz için hazırla
+# Data update
+make data          # Download new data from OWID
+make process       # Process data and prepare for analysis
 
-# Jupyter Lab başlat
+# Start Jupyter Lab
 make notebook
 
-# Rapor üretimi
-make report        # HTML rapor oluştur
+# Report generation
+make report        # Create HTML report
 
-# Kaya gazı analizi
-python scripts/shale_gas_analysis.py          # Kapsamlı kaya gazı analizi
-python scripts/triple_comparison_analysis.py  # 3'lü karşılaştırma analizi
+# Shale gas analysis
+python scripts/shale_gas_analysis.py          # Comprehensive shale gas analysis
+python scripts/triple_comparison_analysis.py  # Triple comparison analysis
 ```
 
-### Manuel Veri İndirme
+### Manual Data Download
 
 ```bash
-# Sadece veri indirme
+# Data download only
 python scripts/download_data.py
 
-# Sadece veri işleme
+# Data processing only
 python scripts/process_data.py
 ```
 
-## 📊 Veri Kaynakları
+## 📊 Data Sources
 
 ### Our World in Data (OWID)
-- **Enerji Verileri**: [energy-data](https://github.com/owid/energy-data)
-- **CO2 Verileri**: [co2-data](https://github.com/owid/co2-data)
-- **Ana Site**: [ourworldindata.org/energy](https://ourworldindata.org/energy)
+- **Energy Data**: [energy-data](https://github.com/owid/energy-data)
+- **CO2 Data**: [co2-data](https://github.com/owid/co2-data)
+- **Main Site**: [ourworldindata.org/energy](https://ourworldindata.org/energy)
 
-### Veri Kalitesi
-- ✅ **Oxford Üniversitesi** projesi
-- ✅ **Açık kaynak** metodoloji
-- ✅ **Güncel veriler** (1900-2024)
-- ✅ **Uluslararası standartlar**
-- ✅ **Akademik araştırmalarda** kullanılıyor
+### Data Quality
+- ✅ **University of Oxford** project
+- ✅ **Open source** methodology
+- ✅ **Current data** (1900-2024)
+- ✅ **International standards**
+- ✅ **Used in academic research**
 
-## 🔬 Analiz Metodolojisi
+## 🔬 Analysis Methodology
 
-### Veri İşleme Süreci
-1. **Ham Veri İndirme**: OWID GitHub depolarından otomatik indirme
-2. **Veri Temizleme**: Eksik değerler ve tutarsızlıkların giderilmesi
-3. **Veri Dönüştürme**: EU27 ve ABD için karşılaştırmalı veri seti oluşturma
-4. **Analiz**: Zaman serisi analizi ve trend hesaplamaları
+### Data Processing Process
+1. **Raw Data Download**: Automatic download from OWID GitHub repositories
+2. **Data Cleaning**: Removal of missing values and inconsistencies
+3. **Data Transformation**: Creating comparative dataset for EU27 and USA
+4. **Analysis**: Time series analysis and trend calculations
 
-### Kullanılan Teknolojiler
-- **Pandas**: Veri manipülasyonu ve analizi
-- **Matplotlib/Seaborn**: Görselleştirme
-- **NumPy**: Sayısal hesaplamalar
-- **Jupyter**: İnteraktif analiz
+### Technologies Used
+- **Pandas**: Data manipulation and analysis
+- **Matplotlib/Seaborn**: Visualization
+- **NumPy**: Numerical calculations
+- **Jupyter**: Interactive analysis
 
-## 📈 Sonuçlar ve Yorumlar
+## 📈 Results and Comments
 
-### EU27'nin Avantajları
-- **Yenilenebilir enerji liderliği** (%22.3)
-- **Daha hızlı düşük karbon geçişi** (%32.4)
-- **Güçlü politika desteği** ve hedefler
+### EU27 Advantages
+- **Renewable energy leadership** (22.3%)
+- **Faster low-carbon transition** (32.4%)
+- **Strong policy support** and targets
 
-### ABD'nin Durumu
-- **Yenilenebilir enerji potansiyeli** var
-- **Nükleer enerji konusunda muhafazakar** yaklaşım
-- **Federal seviyede** tutarlı politika ihtiyacı
+### USA Status
+- **Renewable energy potential** exists
+- **Conservative approach** to nuclear energy
+- **Need for consistent policy** at federal level
 
-### Politika Önerileri
-1. **EU27**: Mevcut nükleer reaktörlerin ömür uzatımı
-2. **ABD**: Yeni nesil nükleer teknolojiler ve yenilenebilir altyapı
-3. **Her iki bölge**: 2050 karbon nötr hedefleri için agresif politikalar
+### Policy Recommendations
+1. **EU27**: Lifetime extension of existing nuclear reactors
+2. **USA**: Next-generation nuclear technologies and renewable infrastructure
+3. **Both regions**: Aggressive policies for 2050 carbon neutral targets
 
-## ⛽ Kaya Gazı (Shale Gas) Analizi
+## ⛽ Shale Gas Analysis
 
-### 🔍 Üçlü Karşılaştırma: Nükleer, Yenilenebilir ve Kaya Gazı
+### 🔍 Triple Comparison: Nuclear, Renewable, and Shale Gas
 
-Bu proje artık **kaya gazı (shale gas)** analizini de içermektedir. OWID veri setinde doğal gaz verileri kullanılarak kaya gazı etkisi analiz edilmiştir.
+This project now also includes **shale gas** analysis. Natural gas data from the OWID dataset has been used to analyze shale gas impact.
 
-#### 📊 Kaya Gazı Analiz Sonuçları
+#### 📊 Shale Gas Analysis Results
 
-| Analiz Türü | Açıklama |
-|-------------|----------|
-| **Shale Gas Revolution (2008)** | ABD'de kaya gazı üretiminin başlangıcı |
-| **Pre-2008 vs Post-2008** | Kaya gazı öncesi ve sonrası karşılaştırması |
-| **EU27 vs ABD Gas Trends** | Doğal gaz kullanım trendlerinin karşılaştırması |
+| Analysis Type | Description |
+|---------------|-------------|
+| **Shale Gas Revolution (2008)** | Beginning of shale gas production in USA |
+| **Pre-2008 vs Post-2008** | Comparison before and after shale gas |
+| **EU27 vs USA Gas Trends** | Comparison of natural gas usage trends |
 
-#### 📈 Yeni Notebook: `shale_gas_triple_analysis.ipynb`
+#### 📈 New Notebook: `shale_gas_triple_analysis.ipynb`
 
-**İçerik:**
-- 🌍 **Nükleer Enerji Trendi**: EU27 vs ABD (1990-2024)
-- 🌱 **Yenilenebilir Enerji Gelişimi**: Paris Anlaşması etkisi
-- ⛽ **Doğal Gaz (Kaya Gazı Proxy)**: Shale Gas Revolution etkisi
-- 📊 **2024 Enerji Karışımı**: 3'lü karşılaştırma
-- 📋 **İstatistiksel Özet**: Detaylı analiz sonuçları
+**Content:**
+- 🌍 **Nuclear Energy Trend**: EU27 vs USA (1990-2024)
+- 🌱 **Renewable Energy Development**: Paris Agreement impact
+- ⛽ **Natural Gas (Shale Gas Proxy)**: Shale Gas Revolution impact
+- 📊 **2024 Energy Mix**: Triple comparison
+- 📋 **Statistical Summary**: Detailed analysis results
 
-**Özellikler:**
-- ✅ **İki Dilli**: İngilizce ve Türkçe açıklamalar
-- ✅ **Görselleştirme**: 4 farklı grafik türü
-- ✅ **Interaktif**: Jupyter Notebook formatında
-- ✅ **Veri Odaklı**: Gerçek OWID verileri ile
+**Features:**
+- ✅ **Bilingual**: English and Turkish explanations
+- ✅ **Visualization**: 4 different chart types
+- ✅ **Interactive**: Jupyter Notebook format
+- ✅ **Data-Driven**: With real OWID data
 
-#### 🛠️ Yeni Scriptler
+#### 🛠️ New Scripts
 
-1. **`scripts/shale_gas_analysis.py`**: Kapsamlı kaya gazı analizi
-2. **`scripts/simple_shale_gas_analysis.py`**: Basit kaya gazı analizi
-3. **`scripts/triple_comparison_analysis.py`**: 3'lü karşılaştırma analizi
+1. **`scripts/shale_gas_analysis.py`**: Comprehensive shale gas analysis
+2. **`scripts/simple_shale_gas_analysis.py`**: Simple shale gas analysis
+3. **`scripts/triple_comparison_analysis.py`**: Triple comparison analysis
 
-#### 📊 Yeni Raporlar
+#### 📊 New Reports
 
-- `reports/triple_comparison_analysis.png`: 3'lü karşılaştırma grafiği
-- `reports/shale_gas_impact.png`: Kaya gazı etkisi analizi
-- `reports/shale_gas_analysis.png`: Kapsamlı kaya gazı analizi
-- `reports/simple_gas_analysis.png`: Basit gaz analizi
+- `reports/triple_comparison_analysis.png`: Triple comparison chart
+- `reports/shale_gas_impact.png`: Shale gas impact analysis
+- `reports/shale_gas_analysis.png`: Comprehensive shale gas analysis
+- `reports/simple_gas_analysis.png`: Simple gas analysis
 
-### 🎯 Kaya Gazı Analizinin Amacı
+### 🎯 Purpose of Shale Gas Analysis
 
-1. **ABD Shale Gas Revolution**'ın enerji karışımına etkisini anlamak
-2. **EU27 ve ABD** arasındaki doğal gaz kullanım farklarını analiz etmek
-3. **Nükleer, Yenilenebilir ve Gaz** enerji kaynaklarının 3'lü karşılaştırmasını yapmak
-4. **Enerji politikalarının** farklı yakıt türlerine etkisini değerlendirmek
+1. **Understanding the impact** of USA Shale Gas Revolution on energy mix
+2. **Analyzing differences** in natural gas usage between EU27 and USA
+3. **Making triple comparison** of Nuclear, Renewable, and Gas energy sources
+4. **Evaluating the impact** of energy policies on different fuel types
 
-## 🤝 Katkıda Bulunma
+## 🤝 Contributing
 
-Bu proje açık kaynak! Katkılarınızı bekliyoruz:
+This project is open source! We welcome your contributions:
 
-1. **Fork** yapın
-2. **Feature branch** oluşturun (`git checkout -b feature/amazing-feature`)
-3. **Commit** yapın (`git commit -m 'Add amazing feature'`)
-4. **Push** yapın (`git push origin feature/amazing-feature`)
-5. **Pull Request** oluşturun
+1. **Fork** the project
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
 
-## 📝 Lisans
+## 📝 License
 
-Bu proje [MIT License](LICENSE) altında lisanslanmıştır.
+This project is licensed under the [MIT License](LICENSE).
 
-## 👥 Yazar
+## 👥 Author
 
 **Zeynep Ruveyda** - [GitHub](https://github.com/ZeynepRuveyda)
 
-## 🙏 Teşekkürler
+## 🙏 Acknowledgments
 
-- **Our World in Data** ekibine veri setleri için
-- **Oxford Üniversitesi**'ne OWID projesi için
-- **Açık kaynak topluluğu**na
+- **Our World in Data** team for datasets
+- **University of Oxford** for OWID project
+- **Open source community**
 
-## 📞 İletişim
+## 📞 Contact
 
 - **GitHub Issues**: [Repo Issues](https://github.com/ZeynepRuveyda/energy-nuclear-renewable-analysis-/issues)
 - **GitHub Discussions**: [Repo Discussions](https://github.com/ZeynepRuveyda/energy-nuclear-renewable-analysis-/discussions)
 
 ---
 
-⭐ **Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!** ⭐
+⭐ **Don't forget to star this project if you liked it!** ⭐
 
-*Son güncelleme: Ağustos 2025*
-
+*Last update: August 2025*
